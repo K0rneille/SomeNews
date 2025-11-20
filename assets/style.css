@@ -1,5 +1,5 @@
 body{
-    font-family: sans-serif;
+    font-family: 'Satoshi';
     margin: 0;
     line-height: 1.4;
     font-size: 16px;
@@ -85,13 +85,16 @@ h3{
     font-family: "Playfair Display", serif;
 
     font-size: 53px;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 100%;
     margin-top: 42px;
     margin-bottom: 16px;
 }
 p{
     font-size: 16 px;
+
+    font-weight: 500;
+    line-height: 160%;
 }
 .bold{
     font-weight: 700;
@@ -117,6 +120,7 @@ p{
 .creativecommons p {
     display: inline-block;
     margin: 0;
+
 }
 
 figure{
@@ -206,7 +210,32 @@ footer p, footer ul{
     margin-top: 16px;
     display:inline-block;
 }
+.credits__list{
+    width: 1250px;
+    margin: 8% 0;
+}
 
-@media screen and ( max-width :  1050px){
+@media screen and ( max-width :  1080px){
+    section{
+        width: 90%;
+        padding: 0 100px;
+    }
+    h1{
+        font-size: 108px;
+    }
+    h2{
+    font-size: 71px;
+    }
+    h3{
+    font-size: 46px;
+    }
+
+}
+
+@media screen and ( max-width :  950px){
+    section{
+        width: 90%;
+        padding: 0 100px;
+    }
 
 }
