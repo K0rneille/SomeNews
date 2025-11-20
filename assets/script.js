@@ -5,9 +5,9 @@
 
 const toggle = document.querySelector(".menu__toggle");
 const menu = document.querySelector(".navigation");
-const linkList=document.querySelector(".navigation__list")
-const link = document.querySelectorAll(".navigation__button")
-const back = document.querySelector(".nav--hidden")
+const linkList=document.querySelector(".navigation__list");
+const link = document.querySelectorAll(".navigation__button");
+const back = document.querySelector(".nav--hidden");
 
 if (toggle){
 
@@ -27,9 +27,9 @@ if (toggle){
 function MenuOpen(){
     menu.classList.toggle("menu--open");
         if (back.classList.contains("nav--hidden")){
-            back.classList.remove("nav--hidden")
+            back.classList.remove("nav--hidden");
         } else {
-            back.classList.add("nav--hidden")
+            back.classList.add("nav--hidden");
         }
 }
 
