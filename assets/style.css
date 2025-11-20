@@ -3,10 +3,9 @@ body{
     margin: 0;
     line-height: 1.4;
     font-size: 16px;
-
+    width: 100vw;
+    overflow-x: hidden;
 }
-
-
 .navigation{
     box-sizing: border-box;
     width: 100%;
@@ -16,28 +15,19 @@ body{
     color: #EFD9CE;
     align-items: center;
     padding: 20px 50px;
-    justify-content: space-between;
-    position: fixed;
-        
-
+    justify-content: space-between
 }
-
 .navigation__list{
     display: flex;
     flex-direction: row;
     margin: 0;
-    width:fit;
-    gap: 16x;
     padding: 0;
-    
 }
-
 .navigation__button a{  
     color: #EFD9CE;
     text-decoration: none;
     font-weight: 500;
 }
-
 .navigation__search, .navigation__button{
     color: #EFD9CE;
     list-style: none;
@@ -45,14 +35,12 @@ body{
     margin: 0 20px;
 
 }
-
 .navigation__search{
     padding-right: 200px;
     margin-right: 25px;
     border :1px solid #EFD9CE;
     border-radius: 8px;
 }
-
 .navigation__button--filled{
     background-color: #EFD9CE;
     border-radius: 8px;
@@ -61,19 +49,21 @@ body{
 .navigation__button--filled a {
     color: #230C33; 
 }
-
-section{
+section{ 
     width: 865px;
-    margin: 20px 0 ;
+    margin: 26px 0 ;
+    height: fit-content;
 }
-
+a{
+    color: #230C33;
+}
 main{
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: fit-content;
 }
-
 h1{
     font-family: "Playfair Display", serif;
     font-size: 139px;
@@ -81,7 +71,6 @@ h1{
     width: 100%;
     flex-shrink: 0;
     margin-bottom: 16px;
-
 }
 h2{
     font-family: "Playfair Display", serif;
@@ -89,26 +78,26 @@ h2{
     font-size: 86px;
     font-weight: 600;
     line-height: 100%;
+    margin-bottom: 16px;
     margin-top: 0;
-    margin-bottom: 33px;
 }
-
 h3{
     font-family: "Playfair Display", serif;
 
     font-size: 53px;
     font-weight: 400;
     line-height: 100%;
-    margin-top: 0;
+    margin-top: 42px;
     margin-bottom: 16px;
 }
 p{
     font-size: 16 px;
 }
-
+.bold{
+    font-weight: 700;
+}
 .header p{
     display: inline-block;
-    margin: 8px ;
 }
 .tag{
     padding: 8px 20px 8px 20px;
@@ -118,4 +107,106 @@ p{
 .header__img{
     width: 100%;
     margin-top: 16px;
+}
+
+.creativecommons{ 
+    display: flex;
+    gap: 24px;
+    height: fit-content;
+}
+.creativecommons p {
+    display: inline-block;
+    margin: 0;
+}
+
+figure{
+    width: 100%;
+    margin: 0;
+}
+
+
+blockquote{
+    width: 100%;
+    margin: 0 ;
+}
+
+blockquote p{
+    font-weight: 600;
+    font-style: italic;
+    margin: 0;
+}
+figcaption{
+    font-weight: 600;
+    font-style: italic;
+    margin: 0;
+}
+
+.banneer{
+    background-color:#230C33;
+    width: 70%;
+    padding: 68px 15%;
+    color: white;
+    margin:27px 0 0 0 ;
+}
+.banneer h3{
+    margin-top: 0;
+}
+
+.banneer__btn{
+    padding: 10px 40px 10px 40px;
+    border-radius: 12px;
+
+    border: none;
+    background-color: #EFD9CE;
+}
+footer{
+    background-color: #EFD9CE;
+    color: #230C33;
+    padding: 68px 10%;
+    width: 80%;
+    align-items: start;
+
+}
+
+footer p, footer ul{
+    margin: 0;
+}
+.footer__list{
+    display: inline-block;
+    height: 125px;
+    align-self: top;
+    list-style: none;
+    padding: 0 60px 0 0 ;  
+}
+.footer__title{
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+.footer__element{
+    margin-top: 2px;
+        text-transform: capitalize;
+}
+.AdressCC{
+    height: fit-content;
+    margin: 0;
+}
+
+.footer__element a {
+    text-decoration: none;
+    color: #230C33;
+
+}
+
+.retour__btn{
+    padding: 10px 40px 10px 40px;
+    border-radius: 12px;
+    background-color: #EFD9CE;
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 16px;
+    display:inline-block ;
+}
+
+@media screen and ( max-width :  1050px){
+
 }
