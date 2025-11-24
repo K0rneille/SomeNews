@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>change the title</title>
+    <title>The newsletter of the web</title>
     <script src="assets/script.js" defer></script>
     <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/font/stylesheet.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,19 +14,21 @@
 </head>
 <body>
     <nav class="navigation">
-        <div class="navigation__logo">understood</div>
+        <p class="navigation__logo">understood</p>
+        <button class="menu__toggle"><img src="assets/img/menu-line_.svg" alt=""></button>
         <ul class="navigation__list">
-            <li class="navigation__search">Recherche</li>
+            <li class="navigation__button navigation__search">Recherche</li>
             <li class="navigation__button"><a href="">News</a></li>
             <li class="navigation__button"><a href="">Contact</a></li>
             <li class="navigation__button navigation__button--filled"><a href="">Connexion</a></li>
+            <li class="navigation__button nav--hidden"><a href="">Retour</a></li>
         </ul>
     </nav>
     <main>
         <section class="header">
             <h1>Painting with the web</h1>
             <p class="bold">NathanCallewaert</p>
-            <p>&#x2013</p>
+            <p>&#x2013;</p>
             <p>22/10/2005</p>
             <div class="tags">
                 <p class="tag">New technology</p>
@@ -33,43 +36,121 @@
                 <p class="tag">Art</p>
             </div>
             <img class="header__img" alt="Une mise en page sur fond noir, avec écrit 'painting with the web'en grand, le nom de l'auteur de la conférence : matthias Ott et que cette conférence c'est passée a beyond tellerand a dusseldorf en 2025" src="assets/img/img_header.jpg">
-            <span class="creativecommons">
-                <p class="bold">Gerhard Richter</p>
-                <p>&#x2013</p>
-                <p>&#169</p>
-            </span>
+            <div class="creativecommons">
+                <p>Gerhard Richter</p>
+                <p>&#x2013;</p>
+                <p>&#169;</p>
+            </div>
         </section>
         <section class="WhatIs">
             <h2>Introduction</h2>
             <h3>Qu'est ce que beyond tellerant</h3>
             <p>Beyond Tellerrand est un grand évènement de conférences basés sur la technologie et la créativité.  Se passant bi-annuellement en Allemagne à Düsseldorf et à Berlin qui rassemble plus de 500 passionné.es et/ou professionel.les. Cet évènement possède une grande renommée dans le monde du web grâce aux nouvelles technologies et aux niveau moyen d'utilisation  qui y sont présentées chaque années.</p>
+
+
+
             <h3>Matthias Ott</h3>
             <p>Matthias ott est un ui ux ingenieur indépendant Allemand, professeur pour prototypage, l'accessibilité et de design engineering à l'académie des beau arts et du design de Muthesius. Avec plus de 15 ans d'expérience dans l'industries il travaille pour rendre le web performant, accessible et agréable, il pense que le prototypage est la clef afin daméliorer le Web dans son intégralité car cela l'aide a valider des concept et a explorer des technologies en fusionnant le design et le code. Très renseigné sur les évolutions technologiques il est très exigent sur ses connaissance afin d'aller aux limites du possible. Matthias écris aussi sa propre Newletter: “Own your web”.</p>
         </section>
         <section class="Painting">
+
             <h2>Painting with the web</h2>
 
             <h3>Pour commencer</h3>
-            <img class="header__img" alt="Une mise en page sur fond noir, avec écrit 'painting with the web'en grand, le nom de l'auteur de la conférence : matthias Ott et que cette conférence c'est passée a beyond tellerand a dusseldorf en 2025" src="/assets/img/img_header.jpg">
-            <span class="creativecommons">
-                <p class="bold">Gerhard Richter</p>
-                <p>&#x2013</p>
-                <p>&#169</p>
-            </span>
+            <img class="header__img" alt="Richter devant une peinturée a ton vert, réalisée par lui même" src="assets/img/img_first.jpg" srcset="assets/img/img_first@2x.jpg 2x">
+            <div class="creativecommons">
+                <p>Gerhard Richter</p>
+                <p>&#x2013;</p>
+                <p>&#169;</p>
+            </div>
             <p>Pour commencer, Ott présente une peinture de Richter et faisant un parallèle avec le web et dis que c’est la meilleure façon de travailler, d’avoir un lien avec son œuvre, de pouvoir parler avec elle. Mais pourtant il existe de nombreuses différence entre le web et la peinture.</p>
-            <p>Dans le web La <em>toile</em> N’a pas une taille fixe, elle possède plusieurs dizaines de formes et de taille. Il explique que en Tant que Web designer on ne dois pas peindre une image statique, que malgré l’amélioration dans le systèmes de modules, le design ressemble toujours à une image <em>parfaite</em> qui ne sera pas la même une fois portée sur écran. </p>
+            <p>Dans le web La <em>toile</em> N’a pas une taille fixe, elle possède   plusieurs dizaines de formes et de taille. Il explique que en Tant que Web designer on ne dois pas peindre une image statique, que malgré l’amélioration dans le systèmes de modules, le design ressemble toujours à une image <em>parfaite</em> qui ne sera pas la même une fois portée sur écran. </p>
             <p>La seconde différence est l’existence des matériaux, car utiliser des outils qui simulent le web mais qui ne le sont pas vraiment, donne l’impression de perfection. En séparant le design du développement , Nous Brisons le dialogue entre la toile et eux même et nous empêche de prendre de meilleures décisions.</p>
             <figure>
                 <blockquote>
                     <p><q> Que se passerait t’il si l’on arrêtait de traiter le web comme une toile, mais plutôt comme un outil pour créer avec.</q></p>
                 </blockquote>
-                <figcaption>&#8211 Frank Chimero</figcaption>
+                <figcaption>— Frank Chimero</figcaption>
             </figure>
+
+
+
             <h3>Le css est le meilleur outils</h3>
+            <p>Le css est le plus puissant outil de design web selon ott, grace aux évolutions rapide de cet outils les capacités du web augmente chaque jour, augmentant nos possibilités créatives. </p>
+            <p>Html est un language était extrêmement simple, c’était juste des phrases qui avaient du sens grâce à des balises qui leur donnaient une architecture. </p>
+             <figure>
+                <blockquote>
+                    <p><q> Nous devrions travailler vers un système d’information partagée, dans lequel la généralité et la portabilité est plus important que le graphisme technique et complexe</q></p>
+                </blockquote>
+                <figcaption>— Tim Berners-lee</figcaption>
+            </figure>
+            <p>Cette manière de penser est fondamentalement opposée a l’impression, donnant cette idée forte que le web est de donner de l’information à tout le monde.</p>
+            <p>Mais beaucoup de gens voulaient pouvoir personnaliser, explique Otts, l’Html devenais peu a peu écrasant avec seulement un texte de présentation. Cet alors que Hakon Wium Lie, un norvégien, présente l’idée de “style sheet” pour le www en s’inspirant de l’impression. Avant le Css avait de l’influence entre l’utilisateur et le web afin de créer une sensation de contrôle</p>
+            <p>Il explique que il faudrais utiliser le Css afin de suggérer l’apparence d’une page et pas de l’imposer afin que le css fonctionne dans le futur.</p>
+
+
+            <h3>Les typos fluides</h3>
+                <img class="header__img" alt="Un graphique expliquant que en fonction de la taille de la page, l'on peut faire différentes hiérarchies" src="assets/img/image_font.jpg" srcset="assets/img/image_font@2x.jpg 2x">
+            <div class="creativecommons">
+                <p>matthias Ott</p>
+                <p>&#x2013;</p>
+                <p>&#169;</p>
+            </div>
+            <p>Quand on utilise la typo dans le web, il faut accepter la danse vers l’inconnu. Les typo en fluid s’adapent en taille en fonction de la taille de la page. De plus l’un peu fusionner les échelles de taille avec afin d’avoir des contrastes différent en fonction de la largeur de l’écran. L’on peux utiliser une courbe avec cette technique afin que la taille change plus vite dans les petits écran que les grand, en utilisant la fonction sin().</p>
+            <p>Ott présente aussi de changer la taille d’une typo en fonction de la hauteur de plus que la largeur de l’écran afin d’être encore plus adaptable sur tout les écrans.</p>
+
+
+
+            <h3>Les layouts</h3>
+                <img class="header__img" alt="un assemblement de cercle de couleur avec un type de mise en page web, s'entremellant sur un fond noir" src="assets/img/img_flex.jpg" srcset="assets/img/img_flex@2x.jpg 2x">
+            <div class="creativecommons">
+                <p>matthias Ott</p>
+                <p>&#x2013;</p>
+                <p>&#169;</p>
+            </div>
+            <p>Il existe de nombreuses manières de faires des layout sur le web : CSS grid, flexbox, Gridview… Otts Nous montre le premier qui est très peu utilisé : le css grid. Le css grid permet de créer des colones qui peuvent changer de taille, de forme, d’ordre et disparaitre tout ça indépendamment l’une de l’autre.  Subgrid est un autre outil qui permet de faires des enfants d’élément, et Container queries qui permet de changer le design d’un bloc en fonction de sa taille lors d’une mediaqueries.</p>
+            
+        </section>
+        <section class="Conclusion">
+
+            <h2>Conclusion</h2>
+            <p>Pour finir, on devrais utiliser le css et l’html plus tot dans le design, faire du prototyping. Laisser les développer faire du design et les designer coder. selon lui le futur du web est dans le design engineering, se servir d’un outil plutôt que d’une toile. Faire de ce support une force a la place d’une faiblesse</p>
 
         </section>
-        </section>
+
     </main>
+    <section class="banneer">
+
+        <h3>Cet article vous plait ?</h3>
+        <p>Abonnez vous afin d’en recevoir d’autre !</p>
+        <button class="banneer__btn">S’abonner a la Newsletter</button>
+
+    </section>
+    <footer>
+        <ul class="footer__list">
+            <li class="footer__title">Navigation</li>
+            <li class="footer__element">New</li>
+            <li class="footer__element">Recherche</li>
+            <li class="footer__element">Vos abonnements</li>
+
+        </ul>
+        <ul class="footer__list">
+            <li class="footer__title">Nous</li>
+            <li class="footer__element">à Propos</li>
+            <li class="footer__element">contact</li>
+            <li class="footer__element">Partenaires</li>
+        </ul>
+        <ul class="footer__list">
+            <li class="footer__title">Légal</li>
+            <li class="footer__element">Politique cookies</li>
+            <li class="footer__element">Politque de confidentialité</li>
+            <li class="footer__element"><a href="crédits.html">Crédits</a></li>
+        </ul>
+        <div class="AdressCC">
+            <p class="bold">Understood@2025</p>
+            <p>Rue Henri Pauwells 111, 1400 Nivelles</p>
+        </div>
+    </footer> 
     
 </body>
 </html>
