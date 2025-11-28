@@ -12,12 +12,12 @@ const back = document.querySelector(".nav--hidden");
 if (toggle){
 
     toggle.addEventListener("click",MenuOpen);
-    
 
 }
 
     for(let i of link){
-            i.addEventListener("click", MenuOpen); 
+            i.addEventListener("click", MenuOpen);
+             
     }
 
 
